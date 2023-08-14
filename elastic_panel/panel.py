@@ -4,9 +4,9 @@ import threading
 
 from debug_toolbar.panels import Panel
 from debug_toolbar.utils import (
-    get_module_path,
+    # get_module_path,
     get_stack,
-    hidden_paths,
+    # hidden_paths,
     render_stacktrace,
     tidy_stacktrace,
 )
@@ -52,7 +52,7 @@ def _pretty_json(data):
         return data
 
 
-hidden_paths.append(get_module_path(__name__))
+# hidden_paths.append(get_module_path(__name__))
 
 
 class ElasticQueryInfo:
